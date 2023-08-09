@@ -1,0 +1,24 @@
+{
+  "name": "matrix-tracer",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Jose Huaman Aparcana <josered30@hotmail.com>",
+  "license": "MIT",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@aws-lambda-powertools/tracer": "^1.12.1",
+    "@middy/core": "^4.5.5",
+    "aws-xray-sdk-core": "^3.5.1"
+  }
+}
